@@ -3,6 +3,7 @@ page{
   flex-direction: column;
   height: 100%
 }
+// css
 .result{
   flex: 30%;
   background-color: #DDEBF2;
