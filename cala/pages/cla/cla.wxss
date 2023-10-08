@@ -36,7 +36,7 @@ page{
 }
 .btns>view>view{
   flex:1;
-  border-right: 1px solid #a8d8e2;
+  border-right: 1px solid #b7e2eb;
   border-bottom: 1px solid #a8d8e2;
   box-sizing: border-box;
   
