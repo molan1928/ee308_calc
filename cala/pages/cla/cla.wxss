@@ -49,7 +49,7 @@ page{
   flex: 2;
 }
 .btns>view:first-child>view:first-child{
-  color: #F25B67;
+  color: #ec5561;
 }
 .btns>view>view:last-child{
   color: #d88f89;
