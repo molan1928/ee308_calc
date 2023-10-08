@@ -27,7 +27,7 @@ page{
   flex-direction: column;
   font-size: 17pt;
   border-top: 1px solid #a9e7f3;
-  border-left: 1px solid #b9e5ee;
+  border-left: 1px solid #c8edf5;
 }
 
 .btns>view{
@@ -52,7 +52,7 @@ page{
   color: #ec5561;
 }
 .btns>view>view:last-child{
-  color: #d88f89;
+  color: #e98d84;
 }
 .bg{
   background-color: #c2eafa;
