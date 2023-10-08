@@ -27,7 +27,7 @@ page{
   flex-direction: column;
   font-size: 17pt;
   border-top: 1px solid #a9e7f3;
-  border-left: 1px solid #a8d8e2;
+  border-left: 1px solid #b9e5ee;
 }
 
 .btns>view{
