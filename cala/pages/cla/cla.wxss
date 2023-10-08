@@ -5,7 +5,7 @@ page{
 }
 
 .result{
-  flex: 30%;
+  flex: 31%;
   background-color: #DDEBF2;
   position: relative;
 }
@@ -22,7 +22,7 @@ page{
   right: 3vw;
 }
 .btns{
-  flex: 70%;
+  flex: 69%;
   display: flex;
   flex-direction: column;
   font-size: 17pt;
@@ -52,7 +52,7 @@ page{
   color: #F25B67;
 }
 .btns>view>view:last-child{
-  color: #BF746D;
+  color: #d88f89;
 }
 .bg{
   background-color: #c2eafa;
