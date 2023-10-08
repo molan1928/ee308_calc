@@ -3,7 +3,7 @@ page{
   flex-direction: column;
   height: 100%
 }
-// css
+
 .result{
   flex: 30%;
   background-color: #DDEBF2;
@@ -55,5 +55,6 @@ page{
   color: #BF746D;
 }
 .bg{
-  background-color: #A2CEE0;
+  background-color: #c2eafa;
 }
+ 
