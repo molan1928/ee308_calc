@@ -5,7 +5,7 @@ page{
 }
 
 .result{
-  flex: 31%;
+  flex: 30%;
   background-color: #DDEBF2;
   position: relative;
 }
@@ -22,7 +22,7 @@ page{
   right: 3vw;
 }
 .btns{
-  flex: 69%;
+  flex: 70%;
   display: flex;
   flex-direction: column;
   font-size: 17pt;
