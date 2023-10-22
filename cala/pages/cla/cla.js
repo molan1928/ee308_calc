@@ -4,8 +4,10 @@ Page({
    */
   data: {
     num: '',
-    op: ''
+    op: '',
+   
   },
+
   result: null,
   isClear: false,
   numBtn: function (e) {
@@ -43,9 +45,17 @@ Page({
       return;
     } else if (val === '^') {
       this.setData({ op: '^' });
+    } else if (val === '√') {
+      num = Math.sqrt(num);
+      this.setData({ num: num.toString(), op: '' });
+      return;
+    } else if (op === 'mod') { // 执行取余数运算
+      num = num % this.data.num;
+      this.setData({ num: num.toString(), op: '' });
     } else {
       this.setData({ op: val });
     }
+
     if (this.isClear) {
       return;
     }
@@ -54,6 +64,7 @@ Page({
       this.result = num;
       return;
     }
+  
     if (op === '+') {
       this.result = this.result + num;
     } else if (op === '-') {
@@ -87,5 +98,61 @@ Page({
     this.result = null;
     this.isClear = false;
     this.setData({ num: '0', op: '' });
-  }
+  },
+
+
+  
+  
+  //科学计算器
+  numBtn: function (e) {
+    var num = e.target.dataset.val;
+    if (this.data.num === '0' || this.isClear) {
+      this.setData({ num: num });
+      this.isClear = false;
+    } else {
+      this.setData({ num: this.data.num + num });
+    }
+  },
+  // ...
+  logBtn: function () {
+    // 计算以 10 为底的对数
+    var num = Number(this.data.num);
+    if (num > 0) {
+      num = Math.log10(num);
+      this.setData({ num: num.toString() });
+    } else {
+      // 处理无效输入
+      console.error('Invalid input for log');
+    }
+  },
+  lnBtn: function () {
+    // 计算自然对数
+    var num = Number(this.data.num);
+    if (num > 0) {
+      num = Math.log(num);
+      this.setData({ num: num.toString() });
+    } else {
+      // 处理无效输入
+      console.error('Invalid input for ln');
+    }
+  },
+
+  reciprocalBtn: function () {
+    var num = Number(this.data.num);
+    if (num !== 0) {
+      num = 1 / num;
+      this.setData({ num: num.toString() });
+    } else {
+      // 处理除以零错误
+      console.error('Division by zero');
+    }
+  },
+
+  navigateToNewPage: function () {
+    wx.navigateTo({
+      url: '/pages/history/history', // 新页面的路径
+    });
+  },
+
 })
+

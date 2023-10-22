@@ -1,0 +1,26 @@
+/* pages/history/history.wxss */
+/* pages/my-country/my-country.wxss */
+
+.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between; /* 使用 space-between 来在容器内创建间隔 */
+  align-items: center; /* 居中对齐 */
+  height: 100%;
+  background-color: #d0dfe6; /* 背景颜色，可根据需要调整 */
+}
+
+.rectangle {
+  width: 300px; /* 设置长方形的宽度，可根据需要调整 */
+  border: 2px solid #c3d7df; /* 边框样式，可根据需要调整 */
+  padding:10px; /* 内边距，可根据需要调整 */
+  border-radius: 10px; /* 边框圆角，可根据需要调整 */
+  background-color: #c3d7df; /* 长方形框背景颜色，可根据需要调整 */
+  margin: 5px 0; /* 添加垂直间距，可根据需要调整 */
+}
+
+.text {
+  font-size: 20px; /* 文本字体大小，可根据需要调整 */
+  text-align: center;
+  margin: 0; /* 添加 margin: 0; 以消除默认外边距 */
+}

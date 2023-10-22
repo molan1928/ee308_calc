@@ -1,0 +1,14 @@
+
+<!-- pages/history/history.wxml -->
+
+<view class="container">
+  <view class="header">History</view>
+  <view class="record-list">
+    <block wx:for="{{history}}" wx:for-item="item" wx:for-index="index">
+      <view class="record" bindtap="viewRecordDetail" data-index="{{index}}">
+        <text class="formula">{{item.formula}}</text>
+        <text class="result">{{item.result}}</text>
+      </view>
+    </block>
+  </view>
+</view>

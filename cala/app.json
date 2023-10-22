@@ -2,10 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/calc/calc.json",
-    "pages/calc/calc.js",
     "pages/cla/cla",
-    "pages/demo/demo.wxml"
+    "pages/demo/demo.wxml",
+    "pages/history/history"
   ],
   "window": {
     "backgroundTextStyle": "light",
